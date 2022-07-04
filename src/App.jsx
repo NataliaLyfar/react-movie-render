@@ -12,9 +12,10 @@ selectedVideo: null,
   selectVideo = link => this.setState({selectedVideo: link})
   render(){
     const { selectedVideo } = this.state;
-    console.log(this.state.selectedVideo);
+
     return (
     <Container>
+      <h1>Selected video: {selectedVideo}</h1>
       <Videos
        items={videos}
        onSelect={this.selectVideo}
